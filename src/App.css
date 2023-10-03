@@ -1,7 +1,17 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Orbitron&family=Press+Start+2P&family=Roboto:ital,wght@1,100&family=Tektur&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Montserrat:wght@100&family=Orbitron&family=Press+Start+2P&family=Roboto:ital,wght@1,100&family=Tektur&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Press+Start+2P&family=Roboto:ital,wght@1,100&family=Tektur&display=swap');
+
 .App {
   text-align: center;
 }
-
+*{
+  scroll-behavior: smooth;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,17 +21,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +34,76 @@
   to {
     transform: rotate(360deg);
   }
+}
+.section{
+  @apply py-8 lg:py-24 lg:h-screen flex items-center
+}
+/* .actives:hover{
+ @apply bg-gradient-to-r from-purple-500 to-pink-500
+} */
+.brrds{
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+  border-bottom-left-radius: 60% !important;
+  border-top-left-radius: 20px !important;
+
+  border-radius: 50%;
+}
+.fontt{
+  font-family: 'tektur', sans-serif;
+}
+.linear{
+ @apply bg-gradient-to-r p-2 from-blue-700/80
+          to-green-400 
+}
+.text-gradient{
+  @apply bg-gradient-to-r  text-transparent bg-clip-text from-green-400
+  to-blue-400
+}
+.overlay{
+  position: absolute;
+  
+  height: 500px;
+  width: 500px;
+  background-image: linear-gradient( to bottom right, rgb(0, 0, 0),rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.199), rgba(23, 23, 73, 0))
+}
+.bg-about{
+  background-image: url('./bg-images/blacabout.png');
+  
+  
+}
+.all-btn{
+  @apply linear font-semibold 
+  rounded-full text-[1rem] w-36  font-thin
+}
+.all-btn:hover{
+  @apply bg-gradient-to-r p-2 from-green-400
+          to-blue-700/80
+}
+@media  screen and (min-width:768px){
+  .service{
+    background-image: url('./bg-images/onlaptop.png');
+    height: 650px;
+    max-height: 100%;
+    width: 1000px;
+    background-position: bottom;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  }
+}
+.h-font{
+  font-family:'', Tektur;}
+
+.sec-font{
+  font-family: 'montserat', jura;
+}
+.nav-bg:hover{
+  @apply bg-gradient-to-r  from-green-700
+  to-blue-600
+}
+.nav-bg:active{
+  @apply bg-gradient-to-r p-2 from-blue-700/80
+          to-green-400 
 }
