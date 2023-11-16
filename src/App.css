@@ -65,12 +65,11 @@
   
   height: 500px;
   width: 500px;
-  background-image: linear-gradient( to bottom right, rgb(0, 0, 0),rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.199), rgba(23, 23, 73, 0))
+  background-image: linear-gradient( to bottom right, rgb(0, 0, 0),rgba(0, 0, 0, 0.629), rgba(0, 0, 0, 0.293),rgba(0, 0, 0, 0.199), rgba(23, 23, 73, 0))
 }
 .bg-about{
-  background-image: url('./bg-images/blacabout.png');
-  
-  
+  background-image: url('./bg-images/imgabout1.jpg')
+
 }
 .all-btn{
   @apply linear font-semibold 

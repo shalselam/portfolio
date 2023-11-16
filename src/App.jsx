@@ -8,37 +8,22 @@ import Work from './component/Work';
 import Contact from './component/Contact';
 import Service from './component/Service';
 // import { Link } from 'react-scroll';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Getter from "./component/Getter"
+import DetailSrvice from './component/DetailSrvice';
+import Main from './component/Main';
 
 // import ''
 function App() {
   return (
     <>
-      <div class="bg-blue-900 overflow-y-scroll bg-no- bg-cover text-white h-screen bg-[url('./bg-images/blured-2.jpg')]">
-        <div>
-          {/* <Header /> */}
 
-          <div>
-            {/* <Getter/> */}
-          </div>
-          <div id='l'>
-
-            <Bnner />
-            </div>
-          <Nav />
-          <About />
-          <Service />
-          <Work />
-          <Contact />
-          {/* <div class='h-400'></div> */}
-        </div>
-      </div>
-      {/* <Routes>
-          <Route path="/" element={<Bnner/>} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/about" element={<About />} />
-       </Routes> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Main />}> </Route>
+          <Route path='/detail' element={<DetailSrvice />}> </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

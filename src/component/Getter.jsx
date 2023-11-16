@@ -26,7 +26,8 @@ const Getter = () => {
         const d = {
             "type_of_student":"car",
             "name":"shalom is the best",
-            "id":"5",
+            "id": "3",
+            // Date.now().toString(),
             "payment":true
           }
 
